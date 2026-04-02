@@ -44,3 +44,21 @@ export const googleAuth = async (req,res)=>{
         })
     }
 }
+
+export const logout = async (req,res)=>{
+    try{
+
+        return res.clearCookie("token",{
+            httpOnly:true,
+            secure:false,
+            sameSite:"strict"
+        });
+
+    }catch(err){
+        console.log(`Error from Logout : ${err}`);
+        res.status(500).json({
+            success:false,
+            message:`Inter Server Error`
+        })
+    }
+}

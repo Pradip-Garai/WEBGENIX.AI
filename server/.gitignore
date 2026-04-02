@@ -58,3 +58,6 @@ temp/
 # Mac system files
 .AppleDouble
 .LSOverride
+
+.env
+.env.example
