@@ -1,0 +1,48 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "One-click AI website builder and deployment platform.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"No tests specified\"",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pradip-Garai/WEBGENIX.AI.git"
+  },
+  "keywords": [
+    "ai",
+    "website-builder",
+    "webgenix",
+    "no-code",
+    "low-code",
+    "automation",
+    "deploy",
+    "hosting",
+    "ai-tools",
+    "web-development",
+    "builder",
+    "saas"
+  ],
+  "author": "Pradip Garai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Pradip-Garai/WEBGENIX.AI/issues"
+  },
+  "homepage": "https://github.com/Pradip-Garai/WEBGENIX.AI#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.0",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.3.3"
+  }
+}

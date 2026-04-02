@@ -1,0 +1,60 @@
+# Node modules
+node_modules/
+
+# Environment variables (VERY IMPORTANT)
+.env
+.env.local
+.env.development
+.env.production
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage (testing)
+coverage/
+
+# Build output
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Optional: lock files (keep if you want consistency)
+# package-lock.json
+# yarn.lock
+
+# MongoDB local files (if any)
+*.db
+
+# Temporary files
+tmp/
+temp/
+
+# Cache
+.cache/
+
+# Debug
+*.tgz
+
+# dotenv backup
+.env.backup
+
+# Mac system files
+.AppleDouble
+.LSOverride
