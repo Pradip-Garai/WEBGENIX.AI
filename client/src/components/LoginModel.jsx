@@ -2,23 +2,11 @@ import React from 'react'
 import {AnimatePresence, motion} from 'motion/react'
 import { Link } from "react-router-dom";
 import { signInWithPopup } from 'firebase/auth';
-import { auth, provider, provider2 } from '../firebase';
+import { auth, provider } from '../firebase';
 import axios from 'axios'
 import { serverUrl } from '../App';
 
 function LoginModel({open,onClose}) {
-
-  const handleGitHubAuth = async()=>{
-    try{
-
-      const result = await signInWithPopup(auth,provider2);
-      console(result);
-
-    }catch(err){
-      console.log(err);
-    }
-  }
-
 
   const handleGoogleAuth = async()=>{
     try{
@@ -88,20 +76,6 @@ function LoginModel({open,onClose}) {
                         className='h-8 w-8'
                         src="./Google_SVG.webp" alt="Google Icon" />
                         <p>Continue with Google</p>
-                      </div>
-                      
-                    </motion.button>
-                    <motion.button
-                      whileHover={{scale:1.04}}
-                      whileTap={{scale:0.96}}
-                      onClick={handleGitHubAuth}
-                      className='group relative w-full h-13 mt-4 rounded-xl bg-white text-black font-semibold shadow-xl overflow-hidden'
-                    >
-                      <div className='relative flex items-center justify-center gap-3'>
-                        <img 
-                        className='h-11 w-11'
-                        src="./GitHub_svg.png" alt="GitHub Icon" />
-                        <p>Continue with GitHub</p>
                       </div>
                       
                     </motion.button>
